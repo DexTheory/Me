@@ -1,0 +1,5 @@
+title: Meu Perfil no GitHub
+description: "Meu site no GitHub Pages"
+theme: safrrhmn/jelly-gh-pages
+plugins:
+  - jekyll-remote-theme
