@@ -1,7 +1,7 @@
 # _config.yml
 title: Gustavo - Desenvolvedor Full Stack
 description: Meu perfil no GitHub e portfólio pessoal
-theme: jekyll-theme-minimal
+theme: cotes2020/jekyll-theme-chirpy
 plugins:
   - jekyll-default-layout
   - jekyll-gist
