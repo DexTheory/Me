@@ -1,7 +1,7 @@
 # _config.yml
 title: Gustavo - Desenvolvedor Full Stack
 description: Meu perfil no GitHub e portfólio pessoal
-remote_theme: cotes2020/jekyll-theme-chirpy
+remote_theme: cotes2020/jekyll-theme-chirpy@v7.3.0
 plugins:
   - jekyll-default-layout
   - jekyll-gist
