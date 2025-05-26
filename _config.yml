@@ -1,5 +1,12 @@
-title: Meu Perfil no GitHub
-description: "Meu site no GitHub Pages"
-theme: safrrhmn/jelly-gh-pages
+# _config.yml
+title: Gustavo - Desenvolvedor Full Stack
+description: Meu perfil no GitHub e portfólio pessoal
+theme: jekyll-theme-minimal
 plugins:
-  - jekyll-remote-theme
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-feed
+
+paginate: 5
+paginate_path: "/pages/page:num/"
