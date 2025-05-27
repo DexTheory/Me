@@ -10,6 +10,15 @@ header {
   background: linear-gradient(to bottom, #2727272c, #1d1d1d1c);
 }
 
+/* Fontes */
+.grenze-gotisch-italic {
+  font-family: "Grenze Gotisch", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Estilo do título principal */
 h1 {
   font-size: 4.0rem;
   color: #ffffff;
@@ -28,9 +37,9 @@ h3 {
   color: #ffffff;
   font-family: "Helvetica", serif;
   margin-bottom: -30px;
-  text-align: center; /* Alinha ao centro */
+  text-align: center;
 }
-
+/* Estilo do parágrafo */
 p {
   text-align: center;
   font-size: 1.4rem;
@@ -42,33 +51,36 @@ p {
 
 /* Conteúdo principal */
 .content {
-  padding: 150px 10px;
+  padding: 75px 75px; /* Espaçamento interno do conteúdo */
 }
 
 /* Grid de imagens */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 5px;
+  display: grid; /* Define o layout da grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas responsivas */
+  gap: 30px; /* Espaçamento entre os itens da grid */
 }
-
+/* Estilo das imagens dentro da grid */
 .grid img {
-  width: 100%;
-  border: 0;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
+  width: 100%; /* Imagens ocupam 100% da largura do item da grid */
+  border: 0; /* Remove bordas das imagens */
+  border-radius: 15px; /* Bordas arredondadas */    
+  transition: transform 0.1s ease; /* Transição suave para o efeito de hover */
 }
-
+/* Efeito de hover nas imagens */
 .grid img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Aumenta a imagem em 5% ao passar o mouse */
+  filter: brightness(1.1); /* Aumenta o brilho da imagem ao passar o mouse */ 
 }
 
 /* Rodapé */
 footer {
-  text-align: center;
-  padding: 70px;
-  color: #ffffff;
-  font-size: 1rem;
+  text-align: center; /* Centraliza o texto do rodapé */
+  background: linear-gradient(to bottom, #00000018, #000000); /* Gradiente de fundo */
+  padding: 20px 0; /* Espaçamento interno do rodapé */
+  color: #ffffff56; /* Cor do texto do rodapé */
+  font-size: 0.8rem; /* Tamanho da fonte do rodapé */
+  font-family: "Helvetica", serif; /* Fonte do rodapé */
 }
 
 /* =========================
@@ -83,19 +95,19 @@ footer {
 html {
   --s: 100px; /* Tamanho do padrão do fundo */
   --c1: #111111; /* Cor 1 com transparência */
-  --c2: #000000;   /* Cor 2 sólida */
+  --c2: #000000; /* Cor 2 sólida */
 
-  --_s: calc(2*var(--s)) calc(2*var(--s));
-  --_g: var(--_s) conic-gradient(at 40% 40%, #0000 75%, var(--c1) 0);
-  --_p: var(--_s) conic-gradient(at 20% 20%, #0000 75%, var(--c2) 0);
+  --_s: calc(2*var(--s)) calc(2*var(--s)); /* Tamanho do fundo animado */
+  --_g: var(--_s) conic-gradient(at 40% 40%, #0000 75%, var(--c1) 0); /* Gradiente cônico para o fundo */
+  --_p: var(--_s) conic-gradient(at 20% 20%, #0000 75%, var(--c2) 0); /* Gradiente cônico para o padrão */
 
   background:
-    calc(.9*var(--s)) calc(.9*var(--s)) / var(--_p),
-    calc(-.1*var(--s)) calc(-.1*var(--s)) / var(--_p),
-    calc(.7*var(--s)) calc(.7*var(--s)) / var(--_g),
-    calc(-.3*var(--s)) calc(-.3*var(--s)) / var(--_g),
-    conic-gradient(from 90deg at 20% 20%, var(--c2) 25%, var(--c1) 0) 0 0 / var(--s) var(--s);
-  animation: m 3s infinite;
+    calc(.9*var(--s)) calc(.9*var(--s)) / var(--_p), /* Padrão de fundo animado */
+    calc(-.1*var(--s)) calc(-.1*var(--s)) / var(--_p), /* Padrão de fundo animado deslocado */
+    calc(.7*var(--s)) calc(.7*var(--s)) / var(--_g), /* Gradiente cônico de fundo */
+    calc(-.3*var(--s)) calc(-.3*var(--s)) / var(--_g), /* Gradiente cônico de fundo deslocado */
+    conic-gradient(from 90deg at 20% 20%, var(--c2) 25%, var(--c1) 0) 0 0 / var(--s) var(--s); /* Gradiente cônico de fundo principal */
+  animation: m 3s infinite; /* Animação contínua do fundo */
 }
 
 /* 
@@ -104,50 +116,39 @@ html {
 @keyframes m {
   0% {
     background-position: 
-      calc(.9*var(--s)) calc(.9*var(--s)),
-      calc(-.1*var(--s)) calc(-.1*var(--s)),
-      calc(.7*var(--s)) calc(.7*var(--s)),
-      calc(-.3*var(--s)) calc(-.3*var(--s)), 0 0;
+      calc(.9*var(--s)) calc(.9*var(--s)), /* Posição inicial do primeiro padrão */
+      calc(-.1*var(--s)) calc(-.1*var(--s)), /* Posição inicial do segundo padrão */
+      calc(.7*var(--s)) calc(.7*var(--s)), /* Posição inicial do primeiro gradiente cônico */
+      calc(-.3*var(--s)) calc(-.3*var(--s)), 0 0; /* Posição inicial do gradiente cônico principal */
   }
   25% {
     background-position: 
-      calc(1.9*var(--s)) calc(.9*var(--s)),
-      calc(-1.1*var(--s)) calc(-.1*var(--s)),
-      calc(1.7*var(--s)) calc(.7*var(--s)),
-      calc(-1.3*var(--s)) calc(-.3*var(--s)), 0 0;
+      calc(1.9*var(--s)) calc(.9*var(--s)), /* Posição intermediária do primeiro padrão */
+      calc(-1.1*var(--s)) calc(-.1*var(--s)), /* Posição intermediária do segundo padrão */
+      calc(1.7*var(--s)) calc(.7*var(--s)), /* Posição intermediária do primeiro gradiente cônico */
+      calc(-1.3*var(--s)) calc(-.3*var(--s)), 0 0; /* Posição intermediária do gradiente cônico principal */
   }
   50% {
     background-position: 
-      calc(1.9*var(--s)) calc(-.1*var(--s)),
-      calc(-1.1*var(--s)) calc(.9*var(--s)),
-      calc(1.7*var(--s)) calc(-.3*var(--s)),
-      calc(-1.3*var(--s)) calc(.7*var(--s)), 0 0;
+      calc(1.9*var(--s)) calc(-.1*var(--s)), /* Posição final do primeiro padrão */
+      calc(-1.1*var(--s)) calc(.9*var(--s)), /* Posição final do segundo padrão */
+      calc(1.7*var(--s)) calc(-.3*var(--s)), /* Posição final do primeiro gradiente cônico */
+      calc(-1.3*var(--s)) calc(.7*var(--s)), 0 0; /* Posição final do gradiente cônico principal */
   }
   75% {
     background-position: 
-      calc(2.9*var(--s)) calc(-.1*var(--s)),
-      calc(-2.1*var(--s)) calc(.9*var(--s)),
-      calc(2.7*var(--s)) calc(-.3*var(--s)),
-      calc(-2.3*var(--s)) calc(.7*var(--s)), 0 0;
+      calc(2.9*var(--s)) calc(-.1*var(--s)), /* Posição avançada do primeiro padrão */
+      calc(-2.1*var(--s)) calc(.9*var(--s)), /* Posição avançada do segundo padrão */
+      calc(2.7*var(--s)) calc(-.3*var(--s)), /* Posição avançada do primeiro gradiente cônico */
+      calc(-2.3*var(--s)) calc(.7*var(--s)), 0 0; /* Posição avançada do gradiente cônico principal */
   }
   100% {
     background-position: 
-      calc(2.9*var(--s)) calc(-1.1*var(--s)),
-      calc(-2.1*var(--s)) calc(1.9*var(--s)),
-      calc(2.7*var(--s)) calc(-1.3*var(--s)),
-      calc(-2.3*var(--s)) calc(1.7*var(--s)), 0 0;
+      calc(2.9*var(--s)) calc(-1.1*var(--s)), /* Posição final do primeiro padrão */
+      calc(-2.1*var(--s)) calc(1.9*var(--s)), /* Posição final do segundo padrão */
+      calc(2.7*var(--s)) calc(-1.3*var(--s)), /* Posição final do primeiro gradiente cônico */
+      calc(-2.3*var(--s)) calc(1.7*var(--s)), 0 0; /* Posição final do gradiente cônico principal */
   }
-}
-
-/* <weight>: Use a value from 100 to 900
-   <uniquifier>: Use a unique and descriptive class name
-*/
-
-.grenze-gotisch-italic {
-  font-family: "Grenze Gotisch", serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: italic;
 }
 
 /* Versão Desktop (padrão) */
@@ -194,7 +195,7 @@ html {
   h3 {
     font-size: 0.5rem;
     margin-bottom: 30px;
-    text-align: center; /* Alinha ao centro no mobile */
+    text-align: center;
   }
   .content {
     padding: -600px 2px;
