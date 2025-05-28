@@ -14,10 +14,10 @@ header {
 }
 
 .logo {
-  width: 120px;              /* Tamanho fixo ou ajuste conforme desejar */
-  height: auto;           /* Mantém a proporção da imagem */
-  margin-right: 0px; /* Espaço entre a logo e os títulos */
-  display: block;
+  width: 116px;              /* Tamanho fixo ou ajuste conforme desejar */
+  height: 90px;              /* Mantém a proporção da imagem */
+  margin-right: -30px;         /* Espaço entre a logo e os títulos */
+  display: block;            /* Garante que a logo seja um bloco */
 }
 
 /* Fontes */
@@ -32,9 +32,9 @@ header {
 h1 {
   font-size: 4.0rem;
   color: #ffffff;
-  font-family: "Helvetica", serif;
+  font-family: "Grenze Gotisch", serif;
   margin-top: 0px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   text-align: left;
 }
 h2 {
@@ -45,12 +45,13 @@ h2 {
   text-align: center;
 }
 h3 {
-  font-size: 1.0rem;
+  font-size: 0.7rem;
   color: #ffffff;
   font-family: "Helvetica", serif;
   margin-top: 0;
-  margin-bottom: -30px;
+  margin-bottom: 50px;
   text-align: left;
+  margin-left: -50px;
 }
 h4 {
   font-size: 0.8rem;
@@ -174,74 +175,34 @@ html {
 /* Versão Desktop (padrão) */
 /* Já está definida pelo seu CSS atual */
 
-/* Tablet (até 1024px) */
-@media (max-width: 1024px) {
+/* Mobile */
+@media (max-width: 600px) {
   header {
-    padding: 40px 0;
-  }
-  .content {
-    padding: 20px 10px;
-  }
-  .grid {
-    gap: 15px;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1.1rem;
-    margin-top: 80px;
-  }
-}
-
-/* Mobile (até 1220px) */
-@media (max-width: 1220px) {
-  header {
-    padding: 5px 0;
-    align-items: center; /* Centraliza verticalmente a logo e os títulos */
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 5px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-left: 57px;
   }
   .logo {
-    width: 100px;         /* Reduz o tamanho da logo para o mobile */
-    margin-right: 10px;  /* Espaço entre a logo e os títulos */
+    margin-left: 15px;
+    width: 105px;
+    height: 65px;
   }
+
   h1 {
-    font-size: 2.5rem;
-    text-align: left;         /* Alinha à esquerda */
-    margin-bottom: -5px;
-  }
-  h2 {
-    font-size: 1rem;
-    margin-top: 10px;
-    text-align: left;         /* Alinha à esquerda */
+    font-size: 2rem;
+    text-align: center;
   }
   h3 {
-    font-size: 0.6rem;
-    margin-bottom: 35px;
-    text-align: left;         /* Alinha à esquerda */
+    font-size: 0.4rem;
+    text-align: center;
+    margin-right: -37px;
   }
+  
   .content {
-    padding: 0px 0px;        /* Corrigido: padding negativo removido */
-    align-items: center; /* Centraliza o conteúdo */
-  }
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 5px;
-  }
-  .grid img {
-    width: 100%;
-  }
-  p {
-    font-size: 0.85rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  footer {
-    padding: 15px 2px;
-    font-size: 0.7rem;
-    text-align: center;
+    padding: 10px; /* Reduz o padding do conteúdo no mobile */
+    margin-top: -30px; /* Remove o espaçamento superior no mobile */  
   }
 }
