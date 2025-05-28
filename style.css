@@ -224,6 +224,7 @@ html {
   }
   .content {
     padding: 0px 0px;        /* Corrigido: padding negativo removido */
+    align-items: center; /* Centraliza o conteúdo */
   }
   .grid {
     grid-template-columns: 1fr;
