@@ -197,8 +197,8 @@ html {
   }
 }
 
-/* Mobile (até 600px) */
-@media (max-width: 600px) {
+/* Mobile (até 1220px) */
+@media (max-width: 1220px) {
   header {
     padding: 5px 0;
     align-items: center; /* Centraliza verticalmente a logo e os títulos */
@@ -223,7 +223,7 @@ html {
     text-align: left;         /* Alinha à esquerda */
   }
   .content {
-    padding: 10px 2px;        /* Corrigido: padding negativo removido */
+    padding: 0px 0px;        /* Corrigido: padding negativo removido */
   }
   .grid {
     grid-template-columns: 1fr;
