@@ -1,7 +1,1 @@
-// Animações com AOS
-if (typeof AOS !== 'undefined' && typeof AOS.init === 'function') { // Check if AOS is loaded
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

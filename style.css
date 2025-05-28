@@ -5,9 +5,19 @@ body {
 
 /* Cabeçalho */
 header {
-  text-align: center;
-  padding: 0px 1060px;
+  display: flex; /* Flexbox para layout */
+  align-items: flex-start; /* Alinha o topo da logo e dos títulos */
+  justify-content: flex-start; /* Alinha tudo à esquerda */
+  padding: 30px 30px;       /* Ajuste o padding conforme necessário */
   background: linear-gradient(to bottom, #000000, #1d1d1d1f);
+  text-align: left;         /* Garante alinhamento à esquerda */
+}
+
+.logo {
+  width: 120px;              /* Tamanho fixo ou ajuste conforme desejar */
+  height: auto;           /* Mantém a proporção da imagem */
+  margin-right: 0px; /* Espaço entre a logo e os títulos */
+  display: block;
 }
 
 /* Fontes */
@@ -24,20 +34,30 @@ h1 {
   color: #ffffff;
   font-family: "Helvetica", serif;
   margin-top: 0px;
-  margin-bottom: -25px;
+  margin-bottom: 0.5rem;
+  text-align: left;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   color: #ffffff;
   font-family: "Helvetica", serif;
   margin-top: 50px;
+  text-align: center;
 }
 h3 {
   font-size: 1.0rem;
   color: #ffffff;
   font-family: "Helvetica", serif;
+  margin-top: 0;
   margin-bottom: -30px;
-  text-align: center;
+  text-align: left;
+}
+h4 {
+  font-size: 0.8rem;
+  color: #ffffff;
+  font-family: "Helvetica", serif;
+  margin-top: 20px;
+  text-align: left;
 }
 /* Estilo do parágrafo */
 p {
@@ -94,12 +114,12 @@ footer {
 */
 html {
   --s: 100px; /* Tamanho do padrão do fundo */
-  --c1: #111111; /* Cor 1 com transparência */
+  --c1: #131313; /* Cor 1 com transparência */
   --c2: #000000; /* Cor 2 sólida */
 
   --_s: calc(2*var(--s)) calc(2*var(--s)); /* Tamanho do fundo animado */
-  --_g: var(--_s) conic-gradient(at 40% 40%, #0000 75%, var(--c1) 0); /* Gradiente cônico para o fundo */
-  --_p: var(--_s) conic-gradient(at 20% 20%, #0000 75%, var(--c2) 0); /* Gradiente cônico para o padrão */
+  --_g: var(--_s) conic-gradient(at 40% 40%, #ffffff00 75%, var(--c1) 0); /* Gradiente cônico para o fundo */
+  --_p: var(--_s) conic-gradient(at 20% 20%, #ffffff00 75%, var(--c2) 0); /* Gradiente cônico para o padrão */
 
   background:
     calc(.9*var(--s)) calc(.9*var(--s)) / var(--_p), /* Padrão de fundo animado */
@@ -181,24 +201,29 @@ html {
 @media (max-width: 600px) {
   header {
     padding: 5px 0;
+    align-items: center; /* Centraliza verticalmente a logo e os títulos */
+  }
+  .logo {
+    width: 100px;         /* Reduz o tamanho da logo para o mobile */
+    margin-right: 10px;  /* Espaço entre a logo e os títulos */
   }
   h1 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 2.5rem;
+    text-align: left;         /* Alinha à esquerda */
     margin-bottom: -5px;
   }
   h2 {
     font-size: 1rem;
     margin-top: 10px;
-    text-align: center;
+    text-align: left;         /* Alinha à esquerda */
   }
   h3 {
-    font-size: 0.5rem;
-    margin-bottom: 30px;
-    text-align: center;
+    font-size: 0.6rem;
+    margin-bottom: 35px;
+    text-align: left;         /* Alinha à esquerda */
   }
   .content {
-    padding: -600px 2px;
+    padding: 10px 2px;        /* Corrigido: padding negativo removido */
   }
   .grid {
     grid-template-columns: 1fr;

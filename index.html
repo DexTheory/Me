@@ -36,20 +36,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconnect to Google Fonts for performance -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect to Google Fonts with CORS -->  
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS library for scroll animations -->  
+
 </head> 
 <!-- ====================================================================================================================================================== -->
 <body>
-  <header> 
-    <h1>DEXTHEORY</h1>
-    <h3>DESIGNER GRÁFICO ❖ ILUSTRADOR ❖ UX DESIGNER</h3>
+  <header>
+    <img class="logo" src="assets/icons/artdex.svg" alt="Logo DexTheory" data-aos="fade-up-right"> <!-- Logo of DexTheory with fade-down animation -->
+      <div class="header-titles" data-aos="fade-down-left"> <!-- Header titles with fade-up animation -->
+      <h1>DEXTHEORY</h1>
+      <h3><em>ILLUSTRATOR & UX DESIGNER</em></h3>
+    </div>
   </header>
 
   <section class="content">
   <div class="grid">
     <!-- ARTES -->
-    <img src="assets/img/art1.png" alt="Arte 1" data-aos="zoom-in">
-    <img src="assets/img/art2.png" alt="Arte 2" data-aos="zoom-in">
-    <img src="assets/img/art3.png" alt="Arte 3" data-aos="zoom-in">
+    <img src="assets/img/art1.png" alt="Arte 1" data-aos="zoom-in"
+     data-aos-offset="450"
+     data-aos-easing="ease-in-sine">
+    <img src="assets/img/art2.png" alt="Arte 2" data-aos="zoom-in"
+     data-aos-offset="450"
+     data-aos-easing="ease-in-sine">
+    <img src="assets/img/art3.png" alt="Arte 3" data-aos="zoom-in"
+     data-aos-offset="450"
+     data-aos-easing="ease-in-sine">
   </div>
 </section>
 
@@ -62,8 +73,10 @@
   
   <!-- Scripts for functionality and animations -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS for interactivity -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS library for scroll animations -->
+  <script>
+    AOS.init(); // Initialize AOS animations
+  </script>
 
 </body>
 </html>
