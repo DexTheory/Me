@@ -1,0 +1,26 @@
+{
+  "name": "DexTheory Portfólio",
+  "short_name": "DexTheory",
+  "description": "Seja Bem-Vindo ao meu Portfólio. Aqui você encontrará minhas Artes e Projetos de Design Gráfico.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#131313",
+  "icons": [
+    {
+      "src": "assets/icons/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/artdex.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

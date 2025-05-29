@@ -1,0 +1,9 @@
+{
+  "semi": true,             /*Adiciona ponto e vírgula ao final das linhas.*/
+  "singleQuote": true,      /*Usa aspas simples em vez de duplas para strings.*/
+  "tabWidth": 2,            /*Define o tamanho da indentação (2 espaços).*/
+  "trailingComma": "es5",   /*Adiciona vírgula no final de objetos/arrays (quando possível, padrão ES5).*/
+  "printWidth": 80,         /*Largura máxima da linha antes de quebrar.*/
+  "bracketSpacing": true,   /*Adiciona espaço entre chaves em objetos: { foo: bar }.*/
+  "arrowParens": "always"   /*Sempre usa parênteses em arrow functions: (x) => x.*/
+}
