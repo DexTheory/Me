@@ -18,7 +18,7 @@ window.addEventListener('scroll', function() {
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js');
 }
-document.addEventListener('contextmenu', event => event.preventDefault());
-document.addEventListener('selectstart', event => event.preventDefault());
-document.addEventListener('dragstart', event => event.preventDefault());
-document.addEventListener('copy', event => event.preventDefault());
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('selectstart', event => event.preventDefault());
+  document.addEventListener('dragstart', event => event.preventDefault());
+  document.addEventListener('copy', event => event.preventDefault());
