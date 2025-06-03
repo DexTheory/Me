@@ -1,0 +1,23 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "Olá! Me chamo Gustavo, tenho 26 anos e sou estudante de **Análise e Desenvolvimento de Sistemas**.  \r Atualmente estou me aprofundando em desenvolvimento backend e frontend, com foco em construir soluções eficientes e bem estruturadas.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DexTheory/DexTheory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DexTheory/DexTheory/issues"
+  },
+  "homepage": "https://github.com/DexTheory/DexTheory#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
